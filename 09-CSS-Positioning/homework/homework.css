@@ -64,3 +64,8 @@ text-align: center;
 }
 
  
+#elementoUno[{
+    display: flex;
+    align-self: center;
+
+}]

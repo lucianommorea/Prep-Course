@@ -42,7 +42,7 @@ function agregarStringInvertida() {
   String.prototype.reverse = function() {
     var stringInvertida = '';
     for(var i = this.length - 1; i>=0; i--) {
-      stringInvertida = stringInvertida + this.charAt(i);
+      stringInvertida = stringInvertida + this[i];
     }
     return stringInvertida;
   };
@@ -83,8 +83,8 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
   
-  var Juan = new Persona('Juan', 'Perez', 22, 'Saavedra 123');
-  return Juan
+  var persona = new Persona(nombre, apellido, edad, dir);
+  return persona
 }
   
 function agregarMetodo() {

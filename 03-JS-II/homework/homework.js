@@ -32,7 +32,6 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-
   if (status === 1) {
     return 'Online'
   }
@@ -51,6 +50,7 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+
 if (idioma === 'aleman'){
     return 'Guten Tag!';
 }
@@ -73,6 +73,7 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+
   switch (color){
       case 'blue': return('This is blue');
       case 'red': return('This is red');
@@ -87,6 +88,7 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+
   return (numero === 5 || numero === 10)
 }
 
@@ -94,6 +96,7 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+
   return (numero < 50 && numero > 20)
 }
 
@@ -105,6 +108,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+
   return (numero % 1 === 0)
 }
 
@@ -113,6 +117,7 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+
 if (numero % 15 === 0){
   return 'fizzbuzz';
 }
@@ -177,6 +182,7 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
+
   if (valor === true){
     return 'Soy verdadero'
   }
@@ -187,6 +193,7 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
+
   var tabladel6 = []
   for(var i = 0; i <= 10; i++) {
     tabladel6.push(i*6)
